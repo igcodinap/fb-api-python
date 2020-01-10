@@ -1,4 +1,5 @@
 {
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "python.pythonPath": "C:\\Users\\igcod\\.virtualenvs\\fb-api-lbxqoPCY\\Scripts\\python.exe"
 }

@@ -2,14 +2,16 @@ import json
 import facebook
 
 def main():
-    token = {"EAAOpVL6foG8BAFRsNLE7vy4br5tZA6N29MBptZBPjo4P0WXWYtJAU0waBOmZCslgPAFZAv0UZAhDUr9AZALu5EFS1K1AVWzmBZBMObo578lV0wyItQC8E170y6AxgC8V15oxvHJFI3yFR2T1eRsL2onwCjhYioPP8Fnq95SZB2Ijs4n6fXlnw7iO7G75SEQWuBsApmM98g7uNqaXx5hxro9IjvyEQ6s4H0jaVKMmTN5njwZDZD"}
+    token = {"EAAOpVL6foG8BAAcZASxOCCZAE6qjHbNUPFmciLyAGCFRWhhq8XCEGFNIybiyuHatRlZAwpEcitC8EyhNjPt8h37dphwW0yj8ZC0hcZCIeRnfte8HLgUS7SjvheYINenvpdXYlsrkR8bMCYV4D7hWOMXGQwWD2NLWEAB8GiHSCuZAp8lntt3cr3Mgbr6LpBHW15jnyxPFnI8eNLsNgjABMkZAuqIqtu0T3JBSto5aherHQZDZD"}
     graph = facebook.GraphAPI(token)
 
     fields = ['name,email, events']
 
-    profile = graph.get_object('me', fields = fields)
-
-    print(json.dumps(profile, indent=4))
+    ids = [10156853388023027, 10221292185153045]
+    
+    for id in ids:
+        profile = graph.get_object(id, fields = fields)
+        print(json.dumps(profile, indent=4))
 
 if __name__ =="__main__":
     main()
