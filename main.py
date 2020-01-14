@@ -2,7 +2,7 @@ import json
 import facebook
 
 def main():
-    token = {"EAALShho8E80BAN9rSjWcHCdIuffH9p4nFi7gMJBTF0o8i7FpZCvdjhZAhlXtxJzy9vmIwmB1HfVxAvTyteEkVRDtUhvupOd3TnS8xNjDoiFhsGZC9RJvVgI5RXqQ8zYJ2cUFJmrWzVlgFfILETEGgSwKznsFj1ZAqZAR4IeG653k7SBaAdIcNPkWVhDOSzLEl378hVMQfLtBkl3tJMaNaV8YTjce6NlwUQVEj1kLtmAZDZD"}
+    token = {""}
     graph = facebook.GraphAPI(token)
 
     fields = ['name,email, events']
